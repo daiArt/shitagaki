@@ -918,7 +918,6 @@ $(function() {
 
         talkCount += 1;
         checkAnnounce = 100;
-        console.log(talkCount)
 
         if (announceCount.includes(talkCount)) {
 
@@ -932,24 +931,32 @@ $(function() {
 
     setTimeout (function() {
 
-        clearInterval(rehersalGamePlay);
-        talkCount = 0
-        checkAnnounce = 0;
-
-        $(".gameUpper").attr('id','gameUpperBack1')
-        $(".background").attr('id','gameUpperBack1')
-
         $(".roadNow h2").html('OK!')
-        $(".roadNow").addClass('closeRoadNow');
+        $(".roadBar").css({
+            display: 'none'
+        })
 
         setTimeout (function() {
-            $(".roadNow").attr('class','roadNow')
-            $(".roadNow").css({
-                display: 'none'
-            })
-        },3000)
 
-    },7000)
+            clearInterval(rehersalGamePlay);
+            talkCount = 0
+            checkAnnounce = 0;
+    
+            $(".gameUpper").attr('id','gameUpperBack1')
+            $(".background").attr('id','gameUpperBack1')
+    
+            $(".roadNow").addClass('closeRoadNow');
+    
+            setTimeout (function() {
+                $(".roadNow").attr('class','roadNow')
+                $(".roadNow").css({
+                    display: 'none'
+                })
+            },1100)
+
+        },1000)
+
+    },4000)
 
 
 

@@ -42,10 +42,16 @@ img {
     width: 100%;
 }
 
+.roadContent {
+    text-align: center;
+}
+
 
 .closeRoadNow {
-    animation: closeRoad 3s forwards;
+    animation: closeRoad 1s ease-in forwards;
 }
+
+
 
 @keyframes closeRoad {
 
@@ -59,6 +65,36 @@ img {
     }
     
 }
+
+
+.roadBar {
+    width: 200px !important;
+    height: 10px; 
+    background: white;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.roadBarDimgray {
+    width: 200px;
+    height: 10px;
+    transform: scaleX(0);
+    transform-origin: top left;
+    background: dimgray;
+    position: absolute;
+    border-radius: 7px;
+    box-sizing: border-box;
+    animation: roadOn 4s ease-out forwards;
+}
+
+@keyframes roadOn {
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
 
 
 .main {
