@@ -64,7 +64,7 @@ $(function() {
         } else if (checkOpeningCount === 0 && openingCount === 11) {
 
             // ここにプレイ用のやついれる
-            window.location.href = '../thirdPageBox/third.html';
+            window.location.href = '/shitagaki/thirdPageBox/third.html';
 
         }
 
