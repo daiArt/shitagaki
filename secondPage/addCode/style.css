@@ -23,6 +23,16 @@ body {
     z-index: -10;
 }
 
+.goToThirdPage {
+    padding: 0 5%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .tapToNext {
     position: absolute;
