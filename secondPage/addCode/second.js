@@ -53,7 +53,6 @@ $(function() {
 
     
 
-    // クリックしたときの動作
 
     $(".opening").click(function() {
 
@@ -63,8 +62,7 @@ $(function() {
 
         } else if (checkOpeningCount === 0 && openingCount === 11) {
 
-            // ここにプレイ用のやついれる
-            window.location.href = '/shitagaki/thirdPageBox/third.html';
+            
 
         }
 
