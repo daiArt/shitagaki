@@ -344,7 +344,7 @@ img {
 
 .downerContent > div {
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     /* padding: 0 40px; */
     box-sizing: border-box;
 }
